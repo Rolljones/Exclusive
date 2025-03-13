@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* default colors */
+    
+    --color-dark:#000000;
+    --color-main:#FFFFFF;
+    --color-box:#F5F5F5;
+    --color-line:#363738;
+    --color-text :#7D8184;
+    --color-btn:#DB4444;
+    --color-sec: #00FF66;
+    --color-btn-hov:#E07575;
+    --color-sec-hov:#A0BCE0;
+    --star-color:#FFAD33;
+
+    /* text sizes */
+    --pri-text:1rem;
+    --sec-text:1.4rem;
+    --pri-head:1.8rem;
+    --sec-head:2.5rem;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    color:var(--color-dark);
+    font-size: 1.2vw;
+}
+
+body {
+    background-color: var(--color-main);
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-optical-sizing: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+}
+
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2.8rem 4.3rem 1.2rem;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 10001;
+    background-color: #ffffff;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: var(--pri-head);
+    font-weight: 700;
+}
+
+/* Navigation links */
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap:1.1rem;
+}
+
+nav .nav-links > li {
+    padding: 0 15px;
+}
+
+nav .nav-links > li a {
+    text-decoration: none;
+    font-size: var(--pri-text);
+    color:var(--color-dark);
+    position: relative;
+    padding-bottom: 7px;
+}
+
+nav .nav-links > li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #484848;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav .nav-links > li a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+nav form {
+    position: relative;
+}
+
+nav form > input {
+    padding:0.7rem 5rem 0.7rem 1.2rem;
+    border: none;
+    background-color: var(--color-box);
+    outline: none;
+    width:100%;
+}
+
+nav form > input::placeholder {
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+}
+
+nav form > i {
+    transform: translateY(0.5rem);
+    position: absolute;
+    right:1.2rem;
+    font-size: 1.2rem;
+}
+
+/* Burger menu */
+nav .burger {
+    display: none;
+    cursor: pointer;
+}
+
+nav .burger > div {
+    width: 25px;
+    height: 3px;
+    background:var(--color-dark);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+main {
+    margin-top: 130px;
+}
+
+main .first-flex {
+    display: flex;
+    justify-content: space-between;
+    padding:0 4.3rem;
+}
+
+main .first-flex > ul {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    list-style-type: none;
+}
+
+.first-flex ul > li a {
+    color:var(--color-dark);
+    text-decoration: none;   
+    transition: all 0.5s ease;
+    padding:10px;
+}
+
+.first-flex ul > li a:hover {
+    border-left: 10px solid var(--color-dark);
+}
+
+.line-break {
+    border-right: 2px solid var(--color-box);
+}
+
+.first-flex .voucher {
+    display: flex;
+    background-color: var(--color-dark);
+    align-items: center;
+    padding:1.2rem 0 1.2rem 4.3rem;
+
+}
+
+.voucher .phone-text > .iphone {
+    color:var(--color-main);
+    display: flex;
+    align-items: center;
+    gap:7px;
+}
+
+.voucher .phone-text {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+ 
+.voucher .phone-text h1 {
+    font-size: var(--sec-head);
+    color:var(--color-main);
+    font-weight: 600;
+}
+
+.voucher img {
+    width:25rem
+}
+
+.phone-text .shop-btn {
+    padding:0.8rem 1.6rem;
+    background-color: var(--color-sec);
+    border: none;
+    font-size: var(--pri-text);
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width:10rem;
+}
+
+.phone-text .shop-btn:hover {
+    background-color: var(--color-sec-hov);  
+}
+
+.phone-text .iphone p {
+    font-size: 1rem;
+}
+
+.phone-text .iphone i {
+    font-size: var(--sec-head);
+}
+
+section.flash {
+    margin-top: 100px;
+}
+
+section.flash .grow {
+    color:var(--color-btn);
+    font-size: var(--sec-text);
+    font-weight: 600;
+    transition: all 0.5s ease;
+    margin-left: 4.4rem;
+    cursor: pointer;
+}
+
+section.flash .grow:hover {
+    border-left: 1.1rem solid var(--color-btn);
+    padding:0 1.1rem;
+}
+
+section.flash .countdown-flex {
+    display: flex;
+    align-items: center;
+    gap:40px;
+    padding:0 70px;
+}
+
+.countdown-flex h2 {
+    font-size: var(--pri-head);
+}
+
+.countdown-flex .countdown > span {
+    font-size: var(--pri-head);
+    font-weight: 700;
+    color:var(--color-dark)
+}
+
+.countdown {
+    color:var(--color-btn);
+    font-size: var(--pri-head);
+}
+
+section.flash .product {
+    margin-top: 50px;
+    padding:0 4.3rem;
+}
+
+section.flash .product > .product-grid {
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+.product .product-grid > .box {
+    width:15.6rem;
+    height:18.75rem;
+    background-color:var(--color-box); 
+    display: flex;
+    align-items: end;
+}
+
+.product .product-grid > .one {
+    background-image: url(./main/gamepad.svg);
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    background-position:center 2.5rem;
+}
+
+.product .product-grid > .two {
+    background-image: url(./main/keyboard.svg);
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    background-position:center 3.5rem;
+}
+
+.product .product-grid > .three {
+    background-image: url(./main/monitor.svg);
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    background-position:center 3rem;
+}
+
+.product .product-grid > .four {
+    background-image: url(./main/chair.svg);
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position:center 3rem;
+}
+
+.product-grid .game {
+    background-color: var(--color-main);
+    width: 100%;
+    padding:10px 0 10px 10px;
+}
+
+.product-grid .game > .price {
+    display: flex;
+    gap:20px;
+}
+
+.product-grid .game p {
+    font-weight: 600;
+    font-size: var(--pri-text);
+}
+
+.game .price > p:nth-child(1) {
+    font-size: var(--pri-text);
+    color:var(--color-btn);
+    font-weight: 500;
+}
+
+.game .price > p:nth-child(2) {
+    font-size: var(--pri-text);
+    color:var(--color-text);
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.game .rating i {
+    color:var(--star-color);
+}
+
+.flex-prod {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-prod .product-btn {
+    font-size: var(--pri-text);
+    background-color: var(--color-btn);
+    color:var(--color-main);
+    padding:0.8rem 1.6rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 50px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.flex-prod .product-btn:hover {
+    background-color: var(--color-btn-hov);
+}
+
+/* tablet breakpoint */
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    html {
+        font-size: 2vw;
+    }
+    
+    
+    .container nav {
+        padding:1.5rem 40px;
+    }
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background: var(--color-dark);
+        text-align: center;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+
+    nav .nav-links > li {
+        padding: 15px 0;
+    }
+
+    nav .nav-links > li a {
+        color:var(--color-main)
+    }
+
+    nav .nav-links > li a::after {
+        background-color:var(--color-main)
+    }
+
+    nav .burger {
+        display: block;
+    }
+
+    /* Burger animation */
+     nav .burger.toggle > .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    nav .burger.toggle > .line2 {
+        opacity: 0;
+    }
+
+    nav .burger.toggle > .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    nav form > input {
+        display: none;
+    }
+
+    nav form > i {
+        color:var(--color-main)
+    }
+
+    main {
+        margin-top: 120px;
+    }
+
+    main .first-flex {
+        display: flex;
+        flex-direction: column;
+        padding:0 40px;
+        gap:50px
+    }
+    
+    main .first-flex > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:15px;
+        list-style-type: none;
+    }
+    
+    .first-flex ul > li a {
+        color:var(--color-dark);
+        text-decoration: none;
+        
+    }
+
+    .first-flex ul > li a:hover {
+        border-bottom: 5px solid var(--color-dark);
+        border-left: none;
+    }
+
+    .first-flex .voucher {
+        display: flex;
+        background-color: var(--color-dark);
+        width:100%;
+        flex-direction: column;
+        padding:30px 0 0 0 ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .voucher .phone-img  {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+
+    }
+
+    .voucher .phone-img > img{
+        width:100%;
+        display: none;
+    }
+
+    section.flash {
+        margin-top: 50px;
+    }
+
+    section.flash .grow {
+        margin: 0 40px;
+        font-size: 1.8rem;
+    }
+
+    section.flash .countdown-flex {
+        display: flex;
+        justify-content: space-between;
+        gap:5px;
+        padding:0 40px;
+    }
+
+    section.flash .product {
+        margin-top: 50px;
+        padding:0 40px;
+    }
+
+    section.flash .product > .product-grid {
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 300px 300px;
+        gap:30px;
+    }
+    
+}
+
+/* Phone breakpoint */
+
+@media (max-width: 576px) {
+    
+    html {
+        font-size: 3vw;
+    }
+    
+    
+    .container nav {
+        padding:1rem 40px;
+    }
+
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background: var(--color-dark);
+        text-align: center;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+
+    nav .nav-links > li {
+        padding: 15px 0;
+    }
+
+    nav .nav-links > li a {
+        color:var(--color-main)
+    }
+
+    nav .nav-links > li a::after {
+        background-color:var(--color-main)
+    }
+
+    nav .burger {
+        display: block;
+    }
+
+    /* Burger animation */
+     nav .burger.toggle > .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    nav .burger.toggle > .line2 {
+        opacity: 0;
+    }
+
+    nav .burger.toggle > .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    nav form > input {
+        display: none;
+    }
+
+    nav form > i {
+        color:var(--color-main)
+    }
+
+    main {
+        margin-top: 120px;
+    }
+
+    main .first-flex {
+        display: flex;
+        flex-direction: column;
+        padding:0 40px;
+        gap:50px
+    }
+    
+    main .first-flex > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:15px;
+        list-style-type: none;
+    }
+    
+    .first-flex ul > li a {
+        color:var(--color-dark);
+        text-decoration: none;
+        
+    }
+
+    .first-flex ul > li a:hover {
+        border-bottom: 5px solid var(--color-dark);
+        border-left: none;
+    }
+
+    .first-flex .voucher {
+        display: flex;
+        background-color: var(--color-dark);
+        width:100%;
+        flex-direction: column;
+        padding:40px 50px 0;
+        align-items: center;
+        justify-content: center;
+        height:fit-content;
+    }
+
+    .voucher .phone-img  {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .voucher .phone-img > img{
+        width:100%;
+        display: none;
+    }
+
+    section.flash {
+        margin-top: 50px;
+    }
+
+    section.flash .grow {
+        margin: 0 40px;
+        font-size: 1.8rem;
+    }
+
+    section.flash .countdown-flex {
+        display: block;
+        padding:0 40px;
+    }
+
+    section.flash .product {
+        margin-top: 50px;
+        padding:0 40px;
+    }
+
+    section.flash .product > .product-grid {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .product .product-grid > .box {
+        width:100%
+    }
+}
+
