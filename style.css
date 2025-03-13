@@ -210,7 +210,7 @@ main .first-flex > ul {
     cursor: pointer;
     transition: all 0.3s ease;
     width:10rem;
-    color:var(--color-dark);
+    color:var(--color-dark) !important;
 }
 
 .phone-text .shop-btn:hover {
@@ -479,6 +479,10 @@ section.flash .product > .product-grid {
 
     }
 
+    .phone-text .shop-btn {
+        color:var(--color-dark) !important;
+    }
+
     .voucher .phone-img > img{
         width:100%;
         display: none;
@@ -630,6 +634,10 @@ section.flash .product > .product-grid {
     .voucher .phone-img > img{
         width:100%;
         display: none;
+    }
+
+    .phone-text .shop-btn {
+        color:var(--color-dark) !important;
     }
 
     section.flash {
