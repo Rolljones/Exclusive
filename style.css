@@ -369,7 +369,7 @@ section.flash .product > .product-grid {
 
 /* tablet breakpoint */
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1024px) {
 
     html {
         font-size: 2vw;
