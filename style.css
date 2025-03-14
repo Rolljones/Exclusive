@@ -95,7 +95,7 @@ nav .nav-links > li a::after {
     transition: all 0.3s ease-in-out;
 }
 
-nav .nav-links > li a:hover::after {
+nav .nav-links > li a:active::after {
     visibility: visible;
     transform: scaleX(1);
   }
@@ -162,7 +162,7 @@ main .first-flex > ul {
     padding:10px;
 }
 
-.first-flex ul > li a:hover {
+.first-flex ul > li a:active {
     border-left: 10px solid var(--color-dark);
 }
 
@@ -213,7 +213,7 @@ main .first-flex > ul {
     color:var(--color-dark) !important;
 }
 
-.phone-text .shop-btn:hover {
+.phone-text .shop-btn:active {
     background-color: var(--color-sec-hov);
     color:#FFFFFF !important;
 }
@@ -239,7 +239,7 @@ section.flash .grow {
     cursor: pointer;
 }
 
-section.flash .grow:hover {
+section.flash .grow:active {
     border-left: 1.1rem solid var(--color-btn);
     padding:0 1.1rem;
 }
@@ -301,13 +301,13 @@ section.flash .product > .product-grid {
     transition: background-color 0.6s, transform 0.3s;
 }
 
-.product-grid .box > .cart-btn:hover {
+.product-grid .box > .cart-btn:active {
     background: transparent;
     border: 2px solid var(--color-text);
     color:#000000 !important;
 }
 
-.product .product-grid > .box:hover .cart-btn {
+.product .product-grid > .box:active .cart-btn {
     display: block;
 
 }
@@ -391,7 +391,7 @@ section.flash .product > .product-grid {
     font-family: "Poppins", sans-serif;
 }
 
-.flex-prod .product-btn:hover {
+.flex-prod .product-btn:active {
     background-color: var(--color-btn-hov);
 }
 
@@ -408,7 +408,7 @@ section.category .grow {
     cursor: pointer;
 }
 
-section.category .grow:hover {
+section.category .grow:active {
     border-left: 1.1rem solid var(--color-btn);
     padding:0 1.1rem;
 }
@@ -438,7 +438,7 @@ section.category .cate-grid > div {
     transition: background-color 0.6s, transform 0.3s;
 }
 
-section.category .cate-grid > div:hover {
+section.category .cate-grid > div:active {
     background-color: var(--color-btn);
     color:var(--color-main);
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
@@ -471,7 +471,7 @@ section.month .grow {
     cursor: pointer;
 }
 
-section.month .grow:hover {
+section.month .grow:active {
     border-left: 1.1rem solid var(--color-btn);
     padding:0 1.1rem;
 }
@@ -497,7 +497,7 @@ section.month .month-flex {
     font-family: "Poppins", sans-serif;
 }
 
-.month-flex .view-btn:hover {
+.month-flex .view-btn:active {
     background-color: var(--color-btn-hov);
 }
 
