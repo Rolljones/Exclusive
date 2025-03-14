@@ -437,11 +437,12 @@ section.category .cate-grid > button {
     border: none;
     justify-content: center;
     transition: background-color 0.6s, transform 0.3s;
+    color:var(--color-dark) !important;
 }
 
 section.category .cate-grid > button:active {
-    background-color: var(--color-btn);
-    color:var(--color-main);
+    background-color: var(--color-btn) !important;
+    color:var(--color-main) !important;
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -816,7 +817,7 @@ section.explore .explore-flex {
     border-radius: 50%;
 }
 
-.five .game > .select div:first-child:hover {
+.five .game > .select div:first-child:active {
     border: 1.5px solid var(--color-dark);
 }
 
@@ -827,7 +828,7 @@ section.explore .explore-flex {
     border-radius: 50%;
 }
 
-.five .game > .select div:last-child:hover {
+.five .game > .select div:last-child:active {
     border: 1.5px solid var(--color-dark);
 }
 
@@ -838,7 +839,7 @@ section.explore .explore-flex {
     border-radius: 50%;
 }
 
-.six .game > .select div:first-child:hover {
+.six .game > .select div:first-child:active {
     border: 1.5px solid var(--color-dark);
 }
 
@@ -849,7 +850,7 @@ section.explore .explore-flex {
     border-radius: 50%;
 }
 
-.six .game > .select div:last-child:hover {
+.six .game > .select div:last-child:active {
     border: 1.5px solid var(--color-dark);
 }
 
@@ -860,7 +861,7 @@ section.explore .explore-flex {
     border-radius: 50%;
 }
 
-.seven .game > .select div:first-child:hover {
+.seven .game > .select div:first-child:active {
     border: 1.5px solid var(--color-dark);
 }
 
@@ -871,7 +872,7 @@ section.explore .explore-flex {
     border-radius: 50%;
 }
 
-.seven .game > .select div:last-child:hover {
+.seven .game > .select div:last-child:active {
     border: 1.5px solid var(--color-dark);
 }
 
@@ -882,7 +883,7 @@ section.explore .explore-flex {
     border-radius: 50%;
 }
 
-.eight .game > .select div:first-child:hover {
+.eight .game > .select div:first-child:active {
     border: 1.5px solid var(--color-dark);
 }
 
@@ -893,7 +894,7 @@ section.explore .explore-flex {
     border-radius: 50%;
 }
 
-.eight .game > .select div:last-child:hover {
+.eight .game > .select div:last-child:active {
     border: 1.5px solid var(--color-dark);
 }
 
@@ -1290,4 +1291,3 @@ section.explore .explore-flex {
     
     }
 }
-
