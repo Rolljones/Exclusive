@@ -11,7 +11,7 @@
     --color-btn:#DB4444;
     --color-sec: #00FF66;
     --color-btn-hov:#E07575;
-    --color-sec-hov:#A0BCE0;
+    --color-sec-hov:#007820;
     --star-color:#FFAD33;
 
     /* text sizes */
@@ -214,7 +214,8 @@ main .first-flex > ul {
 }
 
 .phone-text .shop-btn:hover {
-    background-color: var(--color-sec-hov);  
+    background-color: var(--color-sec-hov);
+    color:#FFFFFF !important;
 }
 
 .phone-text .iphone p {
@@ -282,7 +283,33 @@ section.flash .product > .product-grid {
     height:18.75rem;
     background-color:var(--color-box); 
     display: flex;
-    align-items: end;
+    gap:40px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.product-grid .box > .cart-btn {
+    display: none;
+    padding:10px 20px;
+    border: none;
+    width: 100%;
+    background-color: var(--color-dark);
+    color:var(--color-main);
+    align-self:baseline;
+    position: absolute;
+    font-size: var(--pri-text);
+    transition: background-color 0.6s, transform 0.3s;
+}
+
+.product-grid .box > .cart-btn:hover {
+    background: transparent;
+    border: 2px solid var(--color-text);
+    color:#000000 !important;
+}
+
+.product .product-grid > .box:hover .cart-btn {
+    display: block;
+
 }
 
 .product .product-grid > .one {
@@ -317,6 +344,7 @@ section.flash .product > .product-grid {
     background-color: var(--color-main);
     width: 100%;
     padding:10px 0 10px 10px;
+    align-self: end;
 }
 
 .product-grid .game > .price {
@@ -368,9 +396,8 @@ section.flash .product > .product-grid {
 }
 
 section.category {
-    padding:3rem 4.3rem;
+    padding:4rem 4.3rem 6rem;
     border: 2px solid var(--color-box);
-    margin-bottom: 50px;
 }
 
 section.category .grow {
@@ -402,14 +429,19 @@ section.category .cate-grid > div {
     width: 10rem;
     height: 9rem;
     background-color: #ffffff;
-    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.4);
-    border-radius:20px;
-
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     gap:20px;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.6s, transform 0.3s;
+}
+
+section.category .cate-grid > div:hover {
+    background-color: var(--color-btn);
+    color:var(--color-main);
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cate-grid div > .content {
@@ -425,6 +457,48 @@ section.category .cate-grid > div {
 .cate-grid div > .content p {
     font-size: var(--pri-text);
     font-weight: 500;
+}
+
+section.month {
+    padding:50px 70px;
+}
+
+section.month .grow {
+    color:var(--color-btn);
+    font-size: var(--sec-text);
+    font-weight: 600;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+section.month .grow:hover {
+    border-left: 1.1rem solid var(--color-btn);
+    padding:0 1.1rem;
+}
+
+section.month .month-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.month-flex h2 {
+    font-size: var(--pri-head);
+}
+
+.month-flex .view-btn {
+    font-size: var(--pri-text);
+    background-color: var(--color-btn);
+    color:var(--color-main);
+    padding:0.8rem 2.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+.month-flex .view-btn:hover {
+    background-color: var(--color-btn-hov);
 }
 
 
@@ -583,6 +657,10 @@ section.category .cate-grid > div {
     section.category {
         padding:3rem 40px;
     }
+
+    section.month {
+        padding:50px 40px;
+    }
     
 }
 
@@ -740,6 +818,17 @@ section.category .cate-grid > div {
 
     section.category {
         padding:3rem 40px;
+    }
+
+    section.month {
+        padding:50px 40px;
+    }
+
+    section.month .month-flex {
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        align-items: start;
     }
 }
 
