@@ -1005,6 +1005,11 @@ section.feature .grid-game {
 
 section.feature .grid-game > div {
     background-color: var(--color-dark);
+    padding: 3rem;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: end;
 }
 
 section.feature .grid-game > div:nth-child(1) {
@@ -1029,6 +1034,36 @@ section.feature .grid-game > div:nth-child(4) {
     background-image: url(./main/perfume.svg);
     background-size: contain;
     background-position: center;
+}
+
+section.feature .grid-game > div:nth-child(1) h2 {
+    color:var(--color-main);
+    font-size: var(--pri-head);
+}
+
+section.feature .grid-game > div:nth-child(1) p {
+    color:var(--color-main);
+    font-size: var(--pri-text);
+}
+
+section.feature .grid-game > div:nth-child(1) a {
+    color:var(--color-main);
+    font-size: var(--pri-text);
+}
+
+section.feature .grid-game > div:nth-child(2) h2 {
+    color:var(--color-main);
+    font-size: var(--pri-head);
+}
+
+section.feature .grid-game > div:nth-child(2) p {
+    color:var(--color-main);
+    font-size: var(--pri-text);
+}
+
+section.feature .grid-game > div:nth-child(2) a {
+    color:var(--color-main);
+    font-size: var(--pri-text);
 }
 
 
@@ -1205,9 +1240,8 @@ section.feature .grid-game > div:nth-child(4) {
         margin:50px 40px;
     }
 
-    .enhance .blur {
-        background-color: #7D8184;
-        background: radial-gradient(circle, rgba(169, 168, 168, 0.76) 30%, rgba(0, 0, 255, 0) 80%);
+    section.enhance .day-flex {
+        display: none;
     }
 
     section.explore {
@@ -1239,6 +1273,43 @@ section.feature .grid-game > div:nth-child(4) {
     section.feature .grid-game > div:nth-child(2) {
         background-position: bottom;
         background-repeat: no-repeat;
+    }
+
+    section.feature .grid-game > div:nth-child(2) {
+        background-color: var(--color-dark);
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.feature .grid-game > div:nth-child(1) h2 {
+        color:var(--color-main);
+        font-size: 1.3rem;
+    }
+    
+    section.feature .grid-game > div:nth-child(1) p {
+        color:var(--color-main);
+        font-size: 0.8rem;
+    }
+    
+    section.feature .grid-game > div:nth-child(1) a {
+        color:var(--color-main);
+        font-size: 0.8rem;
+    }
+
+    section.feature .grid-game > div:nth-child(2) h2 {
+        color:var(--color-main);
+        font-size: 1.3rem;
+    }
+    
+    section.feature .grid-game > div:nth-child(2) p {
+        color:var(--color-main);
+        font-size: 0.8rem;
+    }
+    
+    section.feature .grid-game > div:nth-child(2) a {
+        color:var(--color-main);
+        font-size: 0.8rem;
     }
     
 }
@@ -1388,12 +1459,19 @@ section.feature .grid-game > div:nth-child(4) {
 
     section.flash .product > .product-grid {
         display:flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .product .product-grid > .box {
-        width:100%
+        width:40%;
+        background-size: 7rem;
     }
+
+    .product .product-grid > .box:last-child {
+        width:40%;
+        background-size: 4rem;
+    }
+
 
     .product .product-grid > .box:hover .cart-btn {
         display: none;
@@ -1420,11 +1498,17 @@ section.feature .grid-game > div:nth-child(4) {
 
     section.month .month-grid {
         display:flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .month-grid > .box {
-        width:100%
+        width:40%;
+        background-size: 7rem;
+    }
+
+    .month-grid > .box:last-child {
+        width:40%;
+        background-size: 5rem;
     }
 
     .enhance .blur {
@@ -1439,12 +1523,21 @@ section.feature .grid-game > div:nth-child(4) {
         margin:50px 40px;
     }
 
+    section.enhance .day-flex {
+        display: none;
+    }
+
     section.explore {
         padding:50px 40px;
     }
 
+    section.explore .explore-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .explore-flex > .box {
-        width:100%
+        width:100%;
     }
 
     .explore-flex > .box:hover .cart-btn {
