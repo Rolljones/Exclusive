@@ -32,9 +32,10 @@ body {
     scroll-behavior: smooth;
 }
 
-button {
+button, i {
     border-radius: 5px;
     font-family: "Poppins", sans-serif;
+    cursor: pointer;
 }
 
 .cart-btn {
@@ -46,6 +47,8 @@ button {
     margin: 0;
     padding: 0;
     font-optical-sizing: auto;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -111,6 +114,8 @@ nav .nav-links > li a:active::after {
 
 nav form {
     position: relative;
+    display: flex;
+    gap:1.2rem;
 }
 
 nav form > input {
@@ -126,10 +131,16 @@ nav form > input::placeholder {
     font-family: "Poppins", sans-serif;
 }
 
-nav form > i {
-    transform: translateY(55%);
+nav form > .bx-search {
+    transform: translateY(-50%);
     position: absolute;
-    right:1.2rem;
+    right:90px;
+    top:50%;
+    font-size: 1.2rem;
+}
+
+nav form > i {
+    transform: translateY(25%);
     font-size: 1.2rem;
 }
 
@@ -1070,7 +1081,7 @@ section.feature .grid-game > div:nth-child(2) a {
 section.dark-flex {
     display: flex;
     justify-content: space-between;
-    padding:50px 4.3rem;
+    padding:3.5rem 4.3rem 6rem;
 }
 
 section.dark-flex .dark-item {
@@ -1091,6 +1102,8 @@ section.dark-flex .dark-item {
     background-color: var(--color-dark);
     padding:0.7rem;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .pad-item .box-item > i {
@@ -1107,9 +1120,148 @@ section.dark-flex .dark-item {
 }
 
 footer {
-    background-color: #000000;
-    height: 25rem;
+    background-color: var(--color-dark);
+    padding:3.5rem 4.3rem;
 }
+
+footer section {
+    display: flex;
+    gap:0.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 0 3.2rem;
+}
+
+footer section > div {
+    width:14rem;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+footer section > div:nth-child(2) {
+    width:11rem;
+}
+
+footer section > div:nth-child(3) {
+    width:8rem;
+}
+
+footer section > div:nth-child(4) {
+    width:7rem;
+}
+
+footer section > div:nth-child(5) {
+    width:19rem;
+}
+
+footer section > div h3 {
+    color:var(--color-main);
+    font-size: var(--pri-head);
+}
+
+footer section > div:nth-child(1) h4 {
+    color:var(--color-main);
+    font-size: var(--sec-text);
+    margin-bottom:0;
+}
+
+footer section > div h4 {
+    color:var(--color-main);
+    font-size: var(--sec-text);
+    margin-bottom: 0.8rem;
+}
+
+footer section > div a {
+    color:var(--color-main);
+    font-size: var(--pri-text);
+    text-decoration: none;
+}
+
+footer section > div p  {
+        color:var(--color-main);
+        font-size: var(--pri-text);
+}
+
+footer section > div:nth-child(5) p  {
+        color:var(--color-main);
+        font-size: 0.85rem;
+}
+
+footer section > div input {
+    background-color: transparent;
+    padding:0.6rem 1.1rem;
+    border: 2px solid #FFFFFF;
+    color:var(--color-main);
+}
+
+div .download-flex {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    margin-top: 20px;
+}
+
+div .download-flex img {
+    width:10rem;
+}
+
+.btn-flex .google {
+    display: flex;
+    align-items: center;
+    gap:3px;
+    background: transparent;
+    border: 1.5px solid #F5F5F5;
+    padding: 0.2rem 0.4rem;
+    margin-top: 5px;
+}
+
+.btn-flex .google:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap:3px;
+    background: transparent;
+    border: 1.5px solid #F5F5F5;
+    padding: 0.4rem 0.4rem;
+    margin-top: 5px;
+}
+
+.btn-flex .google > img {
+    width: 2rem;
+}
+
+.btn-flex .google:nth-child(2) > img {
+    width: 1.7rem;
+}
+
+.btn-flex .google > .google-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 0.8rem;
+}
+
+.google .google-txt > h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.google:nth-child(2) .google-txt > h3 {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.google .google-txt p {
+    font-size: 0.6rem;
+}
+
+footer p.copy {
+    color:var(--color-text);
+    text-align: center;
+    padding: 3rem 0 0;
+    border-top: 2px solid var(--color-line);
+}
+
 
 
 /* tablet breakpoint */
@@ -1352,7 +1504,7 @@ footer {
     section.dark-flex {
         display: flex;
         flex-direction: column;
-        padding:40px 40px;
+        padding:3rem 0 4rem;
         gap:3rem;
     }
     
@@ -1363,7 +1515,20 @@ footer {
         text-align: center;
         gap:1.2rem;
     }
-    
+
+    footer {
+        padding: 3rem 40px;
+
+    }
+
+    footer section {
+        gap:2rem 0.5rem;
+    }
+
+    footer section > div:nth-child(2) {
+        width:13rem;
+    }
+
 }
 
 /* Phone breakpoint */
@@ -1650,5 +1815,14 @@ footer {
         align-items: center;
         text-align: center;
         gap:1.2rem;
+    }
+
+    footer {
+        padding: 3rem 40px;
+
+    }
+
+    footer section {
+        gap:2rem 0.5rem;
     }
 }
