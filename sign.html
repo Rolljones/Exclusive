@@ -42,7 +42,7 @@
                 </form>
                 <div class="accept-btn">
                     <button class="create">Create Account</button>
-                    <button class="sign">Sign up with Google</button>
+                    <button class="sign" onclick="initiateGoogleSignIn()" ><img src="./form/Icon-Google.svg" alt="">Sign up with Google</button>
                 </div>
                 <p>Already have an account? <a href="#">Login</a></p>
             </div>
@@ -113,3 +113,20 @@
             <p class="copy">Copyright Rimel 2022. All right reserved</p>
         </footer>
     </div>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script>
+        function handleCredentialResponse(response) {
+          // Handle the ID token received from Google
+          console.log("Encoded JWT ID token: " + response.credential);
+          // Perform further processing, such as sending the token to your server
+        }
+      
+        function initiateGoogleSignIn() {
+          google.accounts.id.initialize({
+            client_id: 'YOUR_GOOGLE_CLIENT_ID',
+            callback: handleCredentialResponse
+          });
+          google.accounts.id.prompt(); // Display the One Tap prompt or Sign-In dialog
+        }
+      </script>    
+</body>

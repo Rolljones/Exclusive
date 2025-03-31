@@ -220,7 +220,7 @@ main .head-main > form {
     font-size: 0.9rem;
 }
 
-.head-main .accept-btn > button:first-child {
+.head-main .accept-btn > button.create {
     padding:0.7rem 0;
     background-color: var(--color-btn);
     color:var(--color-box) !important;
@@ -228,21 +228,29 @@ main .head-main > form {
     transition: all 0.5s ease;
 }
 
-.head-main .accept-btn > button:first-child:active {
+.head-main .accept-btn > button.create:active {
     background-color: var(--color-btn-hov);
 }
 
-.head-main .accept-btn > button:last-child {
+.head-main .accept-btn > button.sign {
     padding:0.7rem 0;
     background:transparent;
     border: 1.5px solid #aaaaaa;
     transition: all 0.5s ease;
-
+    color:var(--color-dark) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.7rem
 }
 
-.head-main .accept-btn > button:last-child:active {
+.head-main .accept-btn > button img {
+    width: 1.4rem;
+}
+
+.head-main .accept-btn > button.sign:hover {
     background-color: var(--color-dark);
-    color:var(--color-main);
+    color:var(--color-main) !important;
     border: none;
 }
 
@@ -514,6 +522,19 @@ div .social-icon > i {
         display: none;
     }
 
+    main .head-main > p {
+        font-size: var(--pri-text);
+        margin:1rem 0;
+    }
+
+    .head-main form > input {
+        border: none;
+        background-color: #F5F5F5;
+        padding: 1rem 1rem 1rem;
+        outline: none;
+        margin-bottom: 1rem;
+    }
+
     footer {
         padding: 3rem 40px;
         margin-top: 7rem;
@@ -608,6 +629,19 @@ div .social-icon > i {
 
     main .image {
         display: none;
+    }
+
+    main .head-main > p {
+        font-size: var(--pri-text);
+        margin:1rem 0;
+    }
+
+    .head-main form > input {
+        border: none;
+        background-color: #F5F5F5;
+        padding: 1rem 1rem 1rem;
+        outline: none;
+        margin-bottom: 1rem;
     }
 
     footer {
