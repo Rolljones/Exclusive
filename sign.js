@@ -7,3 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         burger.classList.toggle("toggle");
     });
 });
+
+document.getElementById("sign").addEventListener("click", function() {
+    window.location.href = "https://accounts.google.com/signin";
+  });
