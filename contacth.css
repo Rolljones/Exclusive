@@ -219,7 +219,7 @@ nav .burger > div {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    nav form > input {
+    nav form {
         display: none;
     }
 
@@ -291,7 +291,7 @@ nav .burger > div {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    nav form > input {
+    nav form {
         display: none;
     }
 

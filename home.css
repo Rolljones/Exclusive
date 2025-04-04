@@ -1248,8 +1248,6 @@ div .download-flex img {
     transform: translateX(-20%);
 }
 
-
-
 .btn-flex .google > .google-txt{
     display: flex;
     flex-direction: column;
@@ -1383,6 +1381,7 @@ div .social-icon > i {
         align-items: center;
         gap:0;
         list-style-type: none;
+        display: none;
     }
     
     .first-flex ul > li a {
@@ -1631,7 +1630,7 @@ div .social-icon > i {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    nav form > input {
+    nav form {
         display: none;
     }
 
@@ -1656,6 +1655,7 @@ div .social-icon > i {
         align-items: center;
         gap:0;
         list-style-type: none;
+        display: none;
     }
     
     .first-flex ul > li a {

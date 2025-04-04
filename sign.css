@@ -263,7 +263,7 @@ main .head-main > form {
 }
 
 .head-main p > a {
-    color: var(--color-dark);
+    color: var(--color-line);
 }
 
 footer {
@@ -502,7 +502,7 @@ div .social-icon > i {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    nav form > input {
+    nav form {
         display: none;
     }
 
@@ -521,6 +521,18 @@ div .social-icon > i {
 
     main .image > img {
         display: none;
+    }
+
+    .head-main .accept-btn > button#sign {
+        padding:0.7rem 0;
+        transition: all 0.5s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:0.7rem;
+        background-color: var(--color-dark);
+        color:var(--color-main) !important;
+        border: none;
     }
 
     main .head-main > p {
@@ -615,7 +627,7 @@ div .social-icon > i {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    nav form > input {
+    nav form {
         display: none;
     }
 
@@ -643,6 +655,18 @@ div .social-icon > i {
         padding: 1rem 1rem 1rem;
         outline: none;
         margin-bottom: 1rem;
+    }
+
+    .head-main .accept-btn > button#sign {
+        padding:0.7rem 0;
+        transition: all 0.5s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:0.7rem;
+        background-color: var(--color-dark);
+        color:var(--color-main);
+        border: none;
     }
 
     footer {

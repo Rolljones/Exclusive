@@ -471,7 +471,7 @@ div .social-icon > i {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    nav form > input {
+    nav form {
         display: none;
     }
 
@@ -584,7 +584,7 @@ div .social-icon > i {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    nav form > input {
+    nav form {
         display: none;
     }
 
