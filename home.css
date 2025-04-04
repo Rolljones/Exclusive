@@ -1358,6 +1358,10 @@ div .social-icon > i {
         display: none;
     }
 
+    nav form {
+        display: none;
+    }
+
     nav form > i {
         color:var(--color-main)
     }
