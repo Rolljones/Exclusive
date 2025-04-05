@@ -246,7 +246,9 @@ main .head-main > form {
 }
 
 .head-main .accept-btn > button img {
-    width: 1.4rem;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
 .head-main .accept-btn > button#sign:hover {
@@ -524,7 +526,7 @@ div .social-icon > i {
     }
 
     .head-main .accept-btn > button#sign {
-        padding:0.7rem 0;
+        padding:0.9rem 0;
         transition: all 0.5s ease;
         display: flex;
         align-items: center;
@@ -658,14 +660,14 @@ div .social-icon > i {
     }
 
     .head-main .accept-btn > button#sign {
-        padding:0.7rem 0;
+        padding:0.9rem 0;
         transition: all 0.5s ease;
         display: flex;
         align-items: center;
         justify-content: center;
         gap:0.7rem;
         background-color: var(--color-dark);
-        color:var(--color-main);
+        color:var(--color-main) !important;
         border: none;
     }
 
