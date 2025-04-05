@@ -525,6 +525,14 @@ div .social-icon > i {
         display: none;
     }
 
+    .head-main .accept-btn > button.create {
+        padding:0.9rem 0;
+        background-color: var(--color-btn);
+        color:var(--color-box) !important;
+        border: none;
+        transition: all 0.5s ease;
+    }
+
     .head-main .accept-btn > button#sign {
         padding:0.9rem 0;
         transition: all 0.5s ease;
@@ -657,6 +665,14 @@ div .social-icon > i {
         padding: 1rem 1rem 1rem;
         outline: none;
         margin-bottom: 1rem;
+    }
+
+    .head-main .accept-btn > button.create {
+        padding:0.9rem 0;
+        background-color: var(--color-btn);
+        color:var(--color-box) !important;
+        border: none;
+        transition: all 0.5s ease;
     }
 
     .head-main .accept-btn > button#sign {
