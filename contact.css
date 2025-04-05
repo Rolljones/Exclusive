@@ -174,11 +174,14 @@ nav .burger > div {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 90px;
+        top: 0px;
         left: 0;
-        width: 100%;
-        background: var(--color-dark);
-        text-align: center;
+        width: 80%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        text-align: left;
+        padding: 2rem 0 0 3rem;
     }
 
     nav .nav-links.active {
@@ -195,13 +198,15 @@ nav .burger > div {
     }
 
     nav .nav-links > li a {
-        color:var(--color-main)
+        color:var(--color-dark);
+        font-size: var(--sec-text);
+        font-weight: 500;
     }
 
     nav .nav-links > li a::after {
-        background-color:var(--color-main)
+        background-color:var(--color-dark)
     }
-
+    
     nav .burger {
         display: block;
     }
@@ -250,7 +255,8 @@ nav .burger > div {
         left: 0;
         width: 80%;
         height: 100vh;
-        background: #ffffff;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
         text-align: left;
         padding: 2rem 0 0 3rem;
     }
