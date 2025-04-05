@@ -246,11 +246,13 @@ nav .burger > div {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 90px;
+        top: 0px;
         left: 0;
-        width: 100%;
-        background: var(--color-dark);
-        text-align: center;
+        width: 80%;
+        height: 600px;
+        background: #ffffff;
+        text-align: left;
+        padding: 2rem 0 0 3rem;
     }
 
     nav .nav-links.active {
@@ -267,11 +269,13 @@ nav .burger > div {
     }
 
     nav .nav-links > li a {
-        color:var(--color-main)
+        color:var(--color-dark);
+        font-size: var(--sec-text);
+        font-weight: 500;
     }
 
     nav .nav-links > li a::after {
-        background-color:var(--color-main)
+        background-color:var(--color-dark);
     }
 
     nav .burger {
