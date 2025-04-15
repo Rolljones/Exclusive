@@ -964,10 +964,10 @@ div .social-icon > i {
 
     .panel .hide {
         display: flex;
-        gap:2rem;
+        gap:1rem;
         flex-direction: column;
         background-color: var(--color-box);
-        padding: 2rem;
+        padding: 2rem 2rem 3rem;
         box-shadow: 0 10px 80px rgba(0, 0, 0, 0.3);
         border-radius: 1rem;
     }
@@ -976,12 +976,10 @@ div .social-icon > i {
     .panel .hide > img {
         width:100%;
         height:20rem;
-        background-color: #c6c6c6;
         padding: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        display: none;
     }
 
     .hide .panel-text > p {
