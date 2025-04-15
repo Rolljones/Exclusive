@@ -143,6 +143,53 @@ nav form > i {
     font-size: 1.2rem;
 }
 
+nav form > .drop {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav form > .drop i {
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav form > .drop .blur-box {
+    padding:10px;
+    position: absolute;
+    top:22px;
+    right: 3px;
+    background-color: #0000002c;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: none;
+    z-index: 100;
+    width: 14rem;
+    border-radius: 5px;
+}
+
+.drop .blur-box > .account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.drop .blur-box > .account a {
+    font-size: var(--pri-text);
+    color: var(--color-main);
+    text-decoration: none;
+}
+
+.drop .blur-box > .account i {
+    color: var(--color-main);
+    font-size: var(--pri-text);
+}
+
+nav form > .drop:hover .blur-box, .blur-box:hover {
+    display: block;
+}
+
 /* Burger menu */
 nav .burger {
     display: none;
@@ -256,9 +303,6 @@ section.flash .grow {
     transition: all 0.5s ease;
     margin-left: 4.4rem;
     cursor: pointer;
-}
-
-section.flash .grow:active {
     border-left: 1.1rem solid var(--color-btn);
     padding:0 1.1rem;
 }
@@ -425,9 +469,6 @@ section.category .grow {
     font-weight: 600;
     transition: all 0.5s ease;
     cursor: pointer;
-}
-
-section.category .grow:active {
     border-left: 1.1rem solid var(--color-btn);
     padding:0 1.1rem;
 }
@@ -490,9 +531,6 @@ section.month .grow {
     font-weight: 600;
     transition: all 0.5s ease;
     cursor: pointer;
-}
-
-section.month .grow:active {
     border-left: 1.1rem solid var(--color-btn);
     padding:0 1.1rem;
 }
@@ -727,9 +765,6 @@ section.explore .grow {
     font-weight: 600;
     transition: all 0.5s ease;
     cursor: pointer;
-}
-
-section.explore .grow:active {
     border-left: 1.1rem solid var(--color-btn);
     padding:0 1.1rem;
 }
@@ -995,9 +1030,6 @@ section.feature .grow {
     font-weight: 600;
     transition: all 0.5s ease;
     cursor: pointer;
-}
-
-section.feature .grow:active {
     border-left: 1.1rem solid var(--color-btn);
     padding:0 1.1rem;
 }
