@@ -248,8 +248,8 @@ main .numbers {
     align-items: center;
     flex-direction: column;
     padding: 2.5rem;
-    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.212);
-    border-radius: 0px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
 }
 
 .numbers .overall > .cover-box {
@@ -300,13 +300,20 @@ main .numbers {
 main .sponsor-flex {
     display: flex;
     justify-content: space-between;
-    gap:50px
+    gap:3rem;
 }
 
 .sponsor-flex .details {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap:0.8rem;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+main .sponsor-flex:hover .details:not(:hover) {
+    transform: scale(0.9);
+    -webkit-filter: blur(5px);
+    filter:blur(5px);
 }
 
 .sponsor-flex .details > .sponsor {

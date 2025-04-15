@@ -442,7 +442,7 @@ section.category .cate-grid > button {
     width: 10rem;
     height: 9rem;
     background-color: #ffffff;
-    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.212);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     gap:30px;
